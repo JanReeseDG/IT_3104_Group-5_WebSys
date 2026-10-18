@@ -5,7 +5,7 @@
     --card-bg: #f0e8d4;
     --text-main: #1e293b;
     --text-muted: #000;
-    --border-color: #e2e8f0;
+    --border-color: #065100;
 }
 
 * {
@@ -23,12 +23,19 @@ body {
 
 /* Banner Header */
 header {
-    background-image: url("#");
+    background-image: url("attachments/head-background.png");
     background-size:cover;
     color: #344536;
     padding: 3rem 2rem;
     text-align: center;
     border-bottom: 5px solid #84966D;
+}
+
+.container-head-text{
+    background: rgba(255, 255, 255, 0.622);
+    padding: 1.5rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 header h1 {
