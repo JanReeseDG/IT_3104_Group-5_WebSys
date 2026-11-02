@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1>J A V A S C R I P T</h1>
+            <p><b>Practice</b></p>
+        </div>
+    </header>
+
+
+    <ul>
+        <h2 class="code-title">&lt;&lt; Input and Output Using prompt() &gt;&gt;</h2>
+                
+            <div class = "container">
+                <li class="javascript-code">
+                    <p>
+                        console.log("Please enter your name: ");<br>
+                        let fname = prompt("Enter your name: ");<br>
+                        console.log("Welcome, " + fname + "!");<br>
+                        <br>
+                        console.log("Please enter your age: ");<br>
+                        let age = prompt("Enter your age: ");<br>
+                        console.log("You are " + age + " years old");<br>
+                        <br>
+                        console.log("Please enter your city: ");<br>
+                        let city = prompt("Enter your city: ");<br>
+                        console.log("You live in " + city + ".");<br>
+                    </p>
+                </li>
+
+                <img src="attachments/io.png" alt="Output of Input and Output using prompt()">
+
+                <br>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn" id="btn-io">
+                    Try JavaScript Code
+                 </button>
+            </div>
+
+        <h2 class="code-title">&lt;&lt; Arithmetic Operator - Addition &gt;&gt;</h2>
+                
+            <div class = "container">
+                <li class="javascript-code">
+                    <p>
+                        let num1 = "10"; let num2 = "5";<br>
+                        let result = num1 + num2;<br>
+                        console.log("Result is: ", result);<br>
+                        <br>
+                        let str1 = "Love"; let str2 = "Language";<br>
+                        let resultTwo = str1 + str2;<br>
+                        console.log("Result is: ", resultTwo);<br>
+                    </p>
+                </li>
+                
+                <img src="attachments/add.png" alt="Output of Arithmetic Operation - Addition">
+                
+                <br>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn" id="btn-add">
+                    Try JavaScript Code
+                </button>
+            </div>
+
+        <h2 class="code-title">&lt;&lt; Compound Assignment &gt;&gt;</h2>
+                
+            <div class = "container">
+                <li class="javascript-code">
+                    <p>
+                        let num = 21;<br>
+                        console.log("num + = 3: ", num+=3);<br>
+                        <br>
+                        let xnum = num-=10;<br>
+                        console.log("xnum: ", xnum);<br>
+                        console.log("xnum * = 5: ", xnum *= 5);<br>
+                        console.log("xnum / = 10: ", xnum /= 10);<br>
+                        console.log("xnum % 7: ", xnum /= 10);<br>
+                        console.log("num: ", num %= 7);<br>
+                    </p>
+                </li>
+
+                <img src="attachments/compoundAssignment.png" alt="Output of Compound Assignment">
+
+                <br>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn" id="btn-compoundAss">
+                    Try JavaScript Code
+                </button>
+            </div>
+
+        <h2 class="code-title">&lt;&lt; Switch Case &gt;&gt;</h2>
+                
+            <div class = "container">
+                <li class="javascript-code">
+<pre>
+    let singer = "Charlie";
+    
+    switch(singer){
+        case "Justin":
+            console.log("The Justin Bieber!");
+            break;
+        case "Demi":
+            console.log("The Demi Lovato!");
+            break;
+        case "Charlie":
+            console.log("My Charlie Puth the Cutie!");
+            break;
+        case "Adel":
+            console.log("Adel of all time!");
+            break;
+        default:
+            console.log("The singers is Unknown!");
+            break;
+    }
+</pre>
+                </li>
+
+                <img src="attachments/switchCase.png" alt="Output of Switch Case">
+
+                <br>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn" id="btn-switch">
+                    Try JavaScript Code
+                </button>
+            </div>
+
+        <h2 class="code-title">&lt;&lt; Nested if &gt;&gt;</h2>
+                
+            <div class = "container">
+                <li class="javascript-code">
+<pre>
+    let number = Number(prompt("Enter a number: "));
+
+    if (number > 0){
+        if(number % 2 === 0){
+            console.log("The number is even.");
+        } else{
+            console.log("The number is odd.");
+        }
+    } else{
+        console.log("The number is negative.");
+    }
+</pre>
+                </li>
+
+                <img src="attachments/NestedIf.png" alt="Possible Outputs for the Nested If">
+
+                <br>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn" id="btn-nested">
+                    Try JavaScript Code
+                </button>
+            </div>
+
+        <h2 class="code-title">&lt;&lt; Array & Loops &gt;&gt;</h2>
+                
+            <div class = "container">
+                <li class="javascript-code">
+                    <p>
+                        let singers = ["Charlie", "Demi", "Justin", "Taylor", "Olivia"];<br>
+                        <br>
+                        console.log(singers[0]);<br>
+                        console.log(singers[1]);<br>
+                        console.log(singers[2]);<br>
+                        <br>
+                        for (let i = 0; i < 5; i++){<br>
+                            console.log(singers[i]);<br>
+                        }<br>
+                    </p>
+                </li>
+
+                <img src="attachments/arrayLoop.png" alt="Output of Array and Loops">
+
+                <br>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn" id="btn-arrayLoop">
+                    Try JavaScript Code
+                </button>
+            </div>
+    </ul>
+</body>
+</html>
