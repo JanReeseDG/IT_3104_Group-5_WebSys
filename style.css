@@ -85,6 +85,7 @@ main {
     transform: translateY(-5px); 
     box-shadow: 0 12px 26px rgba(3, 4, 94, 0.16); 
 }
+
 .activity-list li {
     display: flex;
     justify-content: space-between;
