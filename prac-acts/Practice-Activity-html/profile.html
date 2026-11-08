@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Portal</title>
+</head>
+<body class="site">
+    <nav class="navigation">
+        <a href="home.html">Home</a>
+        <a href="profile.html" class="active">Profile</a>
+        <a href="grades.html">Grades</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+ 
+    <header class="portal-title">
+        <h1>Group Profile</h1>
+        <p>Three students, one portal. Meet the people behind this project, see our semester record, and send us your feedback below.</p>
+    </header>
+ 
+    <div class="layout">
+        <aside>
+            <h2>Group Card</h2>
+            <p><strong>Members:</strong> 3</p>
+            <p><strong>Project:</strong> Student Portal</p>
+            <p><strong>Theme:</strong> Shades of blue</p>
+            <hr>
+            <p><em>Jump to:</em></p>
+            <ul>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#record">Academic record</a></li>
+                <li><a href="#feedback">Feedback form</a></li>
+            </ul>
+ 
+        </aside>
+
+        <main>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are a trio of students who like <b>building things</b> and <i>learning by doing</i>.</p>
+ 
+                <div class="members">
+                    <article class="member">
+                        <div class="avatar"><span>JD</span><img src="images/reese.jpg" alt="Photo of Janna Reese De Guzman" onerror="this.remove()"></div>
+                        <h3>Janna Reese De Guzman</h3>
+                        <p>The <strong>organizer</strong> of the group. She keeps deadlines in check and is <em>never late</em> with her tasks.</p>
+                        <p><span class="tag">Organized</span> <span class="tag">Reliable</span></p>
+                    </article>
+ 
+                    <article class="member">
+                        <div class="avatar"><span>KT</span><img src="images/tala.jpg" alt="Photo of Kristal Marie Torino" onerror="this.remove()"></div>
+                        <h3>Kristal Marie Torino</h3>
+                        <p>The <strong>creative eye</strong> of the team. She notices small details and loves <em>making things look good</em>.</p>
+                        <p><span class="tag">Creative</span> <span class="tag">Detail-oriented</span></p>
+                    </article>
+ 
+                    <article class="member">
+                        <div class="avatar"><span>MP</span><img src="images/martin.jpg" alt="Photo of Martin Ryan Parungao" onerror="this.remove()"></div>
+                        <h3>Martin Ryan Parungao</h3>
+                        <p>The <strong>problem solver</strong>. When the code breaks, he is the one who <em>finds out why</em>.</p>
+                        <p><span class="tag">Analytical</span> <span class="tag">Curious</span></p>
+                    </article>
+                </div>
+            </section>
+ 
+            <hr>
+ 
+            <section id="media">
+                <h2>Media</h2>
+                <figure>
+                    <img alt="Illustration of a laptop showing code" width="320" height="180"
+                         src="images/groupPhoto.jpg">
+                    <figcaption>Figure 1. Our group at work: three students, one screen full of code.</figcaption>
+                </figure>
+            </section>
+ 
+            <hr>
+ 
+            <section id="record">
+                <h2>Academic Record Table</h2>
+                <div class="table-wrap">
+                    <table border="1">
+                        <caption>Semester grades (replace with your real subjects and grades)</caption>
+                        <thead>
+                            <tr><th>Student</th><th>Subject</th><th>Units</th><th>Grade</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td rowspan="2">Janna Reese De Guzman</td><td>Web Development</td><td>3</td><td>1.25</td></tr>
+                            <tr><td>Programming 1</td><td>3</td><td>1.50</td></tr>
+                            <tr><td rowspan="2">Kristal Marie Torino</td><td>Web Development</td><td>3</td><td>1.25</td></tr>
+                            <tr><td>Programming 1</td><td>3</td><td>1.25</td></tr>
+                            <tr><td rowspan="2">Martin Ryan Parungao</td><td>Web Development</td><td>3</td><td>1.50</td></tr>
+                            <tr><td>Programming 1</td><td>3</td><td>1.25</td></tr>
+                        </tbody>
+                        <tfoot>
+                            <tr><td colspan="3">Total Units</td><td>18</td></tr>
+                            <tr><td colspan="3">Overall GPA (group average)</td><td>1.33</td></tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+ 
+            <hr>
+ 
+            <section id="feedback">
+                <h2>Registration &amp; Feedback</h2>
+                <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Juan Dela Cruz" required>
+ 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+ 
+                    <label for="phone">Telephone (format: 0912-345-6789):</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0912-345-6789">
+ 
+                    <label for="track">Course Track:</label>
+                    <select name="track" id="track">
+                        <option value="">-- Choose a track --</option>
+                        <optgroup label="Computer Science">
+                            <option value="cs-ai">Artificial Intelligence</option>
+                            <option value="cs-se">Software Engineering</option>
+                        </optgroup>
+                        <optgroup label="Information Technology">
+                            <option value="it-web">Web Development</option>
+                            <option value="it-net">Networking</option>
+                        </optgroup>
+                    </select>
+ 
+                    <label for="lang">Favorite Programming Language:</label>
+                    <input list="languages" id="lang" name="lang" placeholder="Start typing...">
+                    <datalist id="languages">
+                        <option value="JavaScript">
+                        <option value="Python">
+                        <option value="Java">
+                        <option value="C++">
+                        <option value="PHP">
+                    </datalist>
+ 
+                    <fieldset>
+                        <legend>Elective choices (pick any)</legend>
+                        <label class="check"><input type="checkbox" name="elective" value="mobile"> Mobile Development</label>
+                        <label class="check"><input type="checkbox" name="elective" value="data"> Data Analytics</label>
+                        <label class="check"><input type="checkbox" name="elective" value="security"> Cybersecurity</label>
+                    </fieldset>
+ 
+                    <label for="upload">Upload a file:</label>
+                    <input type="file" id="upload" name="upload">
+ 
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us what you think..."></textarea>
+ 
+                    <div class="buttons">
+                        <button type="submit">Send feedback</button>
+                        <button type="reset">Clear form</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+ 
+    <footer>
+        <p>&copy; 2026 Student Portal. Janna Reese De Guzman, Kristal Marie Torino and Martin Ryan Parungao.</p>
+    </footer>
+</body>
+</html>
+ 

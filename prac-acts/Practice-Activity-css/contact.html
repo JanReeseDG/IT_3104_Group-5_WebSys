@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>contact</title>
+</head>
+<body class="site">
+    <nav class="navigation">
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="grades.html">Grades</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+ 
+    <header class="portal-title">
+        <h1>Contact Us</h1>
+        <p>Have a question or feedback? Write to us using the form below.</p>
+    </header>
+ 
+    <div class="layout single">
+        <main>
+            <section>
+                <h2>Reach the Team</h2>
+                <div class="members">
+                    <article class="member"><h3>Janna Reese De Guzman</h3><p>janna@example.com</p></article>
+                    <article class="member"><h3>Kristal Marie Torino</h3><p>kristal@example.com</p></article>
+                    <article class="member"><h3>Martin Ryan Parungao</h3><p>martin@example.com</p></article>
+                </div>
+            </section>
+ 
+            <hr>
+ 
+            <section>
+                <h2>Send a Message</h2>
+                <form action="https://httpbin.org/post" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+ 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+ 
+                    <label for="to">Send to:</label>
+                    <input list="people" id="to" name="to" placeholder="Choose a member">
+                    <datalist id="people">
+                        <option value="Janna Reese De Guzman">
+                        <option value="Kristal Marie Torino">
+                        <option value="Martin Ryan Parungao">
+                    </datalist>
+ 
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="msg" rows="4"></textarea>
+ 
+                    <div class="buttons">
+                        <button type="submit">Send message</button>
+                        <button type="reset">Clear form</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+ 
+    <footer>
+        <p>&copy; 2026 Student Portal. Janna Reese De Guzman, Kristal Marie Torino and Martin Ryan Parungao.</p>
+    </footer>
+
+</body>
+</html>
+ 
